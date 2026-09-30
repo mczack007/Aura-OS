@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOLOGRAPHIC OVERLAY HUD"
+        android:textColor="#00E5FF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="16dp"
+        android:text="System-wide floating overlay &amp; real-time quick actions"
+        android:textColor="#546E7A"
+        android:textSize="12sp" />
+
+    <!-- Overlay Mode Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#101926"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WINDOW MANAGER OVERLAY STATE"
+            android:textColor="#00FFC5"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Overlay Type: TYPE_APPLICATION_OVERLAY\nRendering Pipe: Hardware Accelerated Vulkan Surface\nWindow Transparency: 88% Neon Cyan Alpha\nTouch Pass-Through: Selective Hit-Testing Active"
+            android:textColor="#ECEFF1"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Quick Action Targets -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#101926"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRIGGER HUDS &amp; ACTIONS"
+            android:textColor="#00E5FF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="[1] Instant Mic Tap-to-Talk Float\n[2] Live Vector Query Reticle\n[3] Device Thermal &amp; Throttle Gauge\n[4] Emergency P2P Swarm Beacon"
+            android:textColor="#90A4AE"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>
