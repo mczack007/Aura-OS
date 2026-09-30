@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPATIAL SENSOR TELEMETRY"
+        android:textColor="#00E5FF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="16dp"
+        android:text="Real-time environmental context &amp; motion dynamics"
+        android:textColor="#546E7A"
+        android:textSize="12sp" />
+
+    <!-- IMU & Accelerometer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#101926"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MOTION 6-DOF SENSORS"
+            android:textColor="#00FFC5"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Linear Acceleration: X: +0.02 | Y: -0.11 | Z: +9.81 m/s²\nGyroscope Vector: P: 0.00 rad/s | R: 0.00 rad/s | Y: 0.01 rad/s\nDevice Posture: FLAT // RESTING"
+            android:textColor="#ECEFF1"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Environmental Sensors -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#101926"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENVIRONMENTAL READINGS"
+            android:textColor="#00E5FF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Ambient Lux: 240 lx (Indoor Office Lighting)\nProximity Sensor: CLEAR\nBarometric Pressure: 1013.25 hPa"
+            android:textColor="#90A4AE"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>
+  
