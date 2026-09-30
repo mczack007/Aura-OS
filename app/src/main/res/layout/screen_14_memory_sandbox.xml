@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MEMORY SANDBOX CONSOLE"
+        android:textColor="#00E5FF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="16dp"
+        android:text="Ephemeral short-term RAM context &amp; zero-persistence slots"
+        android:textColor="#546E7A"
+        android:textSize="12sp" />
+
+    <!-- Active Sandbox Buffer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#101926"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACTIVE EPHEMERAL STATE // SLOT #01"
+            android:textColor="#00FFC5"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Session TTL: 04:32 remaining\nContext Entities Loaded: 14 dynamic references\nStorage Target: RAM ONLY (/dev/shm volatile buffer)\nDisk Writing: STRICTLY PROHIBITED"
+            android:textColor="#ECEFF1"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Isolation Policy -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#101926"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SANDBOX ISOLATION ENFORCEMENT"
+            android:textColor="#00E5FF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="[+] Automated cryptographic zeroization on session close\n[+] Kernel seccomp-bpf system call filtering active\n[+] IPC cross-talk quarantine engaged"
+            android:textColor="#90A4AE"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>
