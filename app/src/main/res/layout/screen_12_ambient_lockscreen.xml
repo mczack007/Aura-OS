@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <!-- Top Status Header -->
+    <LinearLayout
+        android:id="@+id/headerArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AMBIENT LOCKSCREEN"
+            android:textColor="#00E5FF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="OLED low-power always-on floating visualizer"
+            android:textColor="#546E7A"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Floating Arc Orb / Centerpiece -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="#0F1722">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="AURA\nPULSE"
+                android:textAlignment="center"
+                android:textColor="#00FFC5"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="13:47"
+            android:textColor="#ECEFF1"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="READY // LISTENING FOR WAKE PHRASE"
+            android:textColor="#00FFC5"
+            android:textSize="11sp"
+            android:letterSpacing="0.06" />
+    </LinearLayout>
+
+    <!-- Bottom Low-Power Status -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#101926"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DISPLAY POWER PROFILE"
+            android:textColor="#00E5FF"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Refresh Rate: 1 Hz (LTPO Mode)\nPixel Illumination: 4.8% Active Pixels\nDraw Call Latency: 0.2ms"
+            android:textColor="#90A4AE"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>
