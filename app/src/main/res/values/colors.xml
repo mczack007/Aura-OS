@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Aura OS Dark HUD Cyberpunk Palette -->
+    <color name="aura_bg_dark">#0A0E17</color>
+    <color name="aura_card_bg">#101926</color>
+    <color name="aura_btn_secondary">#162032</color>
+
+    <color name="aura_cyan_glow">#00E5FF</color>
+    <color name="aura_teal_active">#00FFC5</color>
+    <color name="aura_amber_warn">#FFB300</color>
+
+    <color name="aura_text_primary">#ECEFF1</color>
+    <color name="aura_text_secondary">#90A4AE</color>
+    <color name="aura_text_dim">#546E7A</color>
+</resources>
