@@ -1,5 +1,6 @@
 package com.zain.auraos.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -20,8 +21,11 @@ class DashboardActivity : AppCompatActivity() {
             Toast.makeText(this, "Storage RAG // Querying Neural Memory...", Toast.LENGTH_SHORT).show()
         }
 
+        // Opens the Hardware & MIDI Console Screen
         findViewById<View>(R.id.card_hardware_radios)?.setOnClickListener {
-            Toast.makeText(this, "Hardware Radios // BLE, MIDI & IR Online", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, HardwareConsoleActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
         }
 
         findViewById<View>(R.id.card_swarm_mesh)?.setOnClickListener {
@@ -37,3 +41,4 @@ class DashboardActivity : AppCompatActivity() {
         }
     }
 }
+
