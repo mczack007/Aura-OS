@@ -1,8 +1,8 @@
 package com.zain.auraos.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.zain.auraos.R
 
@@ -12,10 +12,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnInit = findViewById<TextView>(R.id.btn_initialize_aura)
-        btnInit?.setOnClickListener {
-            Toast.makeText(this, "AURA OS Core Online // Initializing Systems...", Toast.LENGTH_SHORT).show()
+        findViewById<TextView>(R.id.btn_initialize_aura)?.setOnClickListener {
+            val intent = Intent(this, DashboardActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
         }
     }
 }
-
